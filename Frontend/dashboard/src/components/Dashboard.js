@@ -115,17 +115,9 @@ const Dashboard = () => {
         <h3>Filters:</h3>
         <div id="s-filter">
           <div id="h1-filter">
-            <label>
-              End Year:&nbsp;
-              <input
-                type="text"
-                name="endYear"
-                value={filters.endYear}
-                onChange={handleFilterChange}
-              />
-            </label>
+  
             <label >
-              Topic: &nbsp;
+              Topic:-
               <input
                 type="text"
                 name="topic"
@@ -134,7 +126,7 @@ const Dashboard = () => {
               />
             </label>
             <label>
-              Sector:&nbsp;
+              Sector:-
               <input
                 type="text"
                 name="sector"
@@ -142,10 +134,19 @@ const Dashboard = () => {
                 onChange={handleFilterChange}
               />
             </label>
+            <label>
+              EndYear:-
+              <input
+                type="text"
+                name="endYear"
+                value={filters.endYear}
+                onChange={handleFilterChange}
+              />
+            </label>
           </div>
           <div id="h2-filter">  
             <label>
-              Region:&nbsp;
+              Region:-
               <input
                 type="text"
                 name="region"
@@ -153,9 +154,30 @@ const Dashboard = () => {
                 onChange={handleFilterChange}
               />
             </label>
-          
-            <label style={{marginBottom:"10px"}}>
-              PEST:&nbsp;
+            <label>
+              Source:-
+              <input
+                type="text"
+                name="source"
+                value={filters.source}
+                onChange={handleFilterChange}
+              />
+            </label>
+            <label>
+              Country:-
+              <input
+                type="text"
+                name="country"
+                value={filters.country}
+                onChange={handleFilterChange}
+              />
+            </label>
+            
+            
+          </div>
+          <div id="h3-filter">
+          <label style={{marginBottom:"10px"}}>
+              PEST:-
               <input
                 type="text"
                 name="pestle"
@@ -164,18 +186,7 @@ const Dashboard = () => {
               />
             </label>
             <label>
-              Source:&nbsp;
-              <input
-                type="text"
-                name="source"
-                value={filters.source}
-                onChange={handleFilterChange}
-              />
-            </label>
-          </div>
-          <div id="h3-filter">
-            <label>
-              SWOT:&nbsp;
+              SWOT:-
               <input
                 type="text"
                 name="swot"
@@ -183,18 +194,9 @@ const Dashboard = () => {
                 onChange={handleFilterChange}
               />
             </label>
-            <label>
-              Country:&nbsp;
-              <input
-                type="text"
-                name="country"
-                value={filters.country}
-                onChange={handleFilterChange}
-              />
-            </label>
            
             <label>
-              City:&nbsp;
+              City:-
               <input
                 type="text"
                 name="city"
@@ -202,6 +204,7 @@ const Dashboard = () => {
                 onChange={handleFilterChange}
               />
             </label>
+            
           </div>
         </div>
         <button id="filt-btn" onClick={applyFilters}>Apply Filters</button>
