@@ -1,0 +1,56 @@
+#filter{
+    margin: auto;
+    box-shadow: 0 0 10px green;
+    border-radius: 25px;
+    width: 61%;
+    padding: 10px;
+}
+input{
+   
+    margin-bottom: 20px;
+   
+}
+#s-filter{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+#h1-filter{
+    display: block;
+   
+}
+
+#h2-filter{
+    display: block;
+   
+}
+
+#filt-btn{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+#filt-btn:hover{
+    background-color: green;
+    color: white;
+}
+
+#filt-data{
+    box-shadow: 0 0 10px red;
+    border-radius: 20px;
+    margin: 30px ;
+    padding: 3px 50px 30px;
+}
+
+#fd{
+    display: flex;
+    justify-content:space-around;
+    border: 20px solid green;
+    padding: 10px;
+    border-radius: 20px;
+}
